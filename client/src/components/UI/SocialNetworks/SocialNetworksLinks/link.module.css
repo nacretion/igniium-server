@@ -1,0 +1,15 @@
+.ico {
+    cursor: pointer;
+    height: 100%;
+    margin: 0 5px;
+}
+
+
+.ico a path {
+    fill: #8163ff;
+}
+
+.socNetwork {
+    width: 100%;
+    height: 100%;
+}

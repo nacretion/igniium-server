@@ -1,0 +1,31 @@
+.modal {
+    z-index: 900;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContent {
+
+}
+
+.modalContent, .inputWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vw;
+    background: white;
+    border-radius: 1vh;
+}
+

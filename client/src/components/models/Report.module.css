@@ -1,0 +1,45 @@
+.heading {
+    color: #8163ff;
+    font-size: calc(1vh + 1vw);
+}
+
+
+.input {
+    height: 5vh;
+    width: 20vw;
+    margin-bottom: 2vh;
+}
+
+.textField {
+    width: 20vw;
+    height: 10vh;
+    overflow-x: auto;
+
+}
+
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 500px) {
+    .heading {
+        font-size: calc(2vh + 2vw);
+    }
+
+    .input {
+        width: 80vw;
+        margin: calc(2vh + 2vw);
+    }
+
+    .btn {
+        margin-top: 2vh;
+    }
+
+    .textField {
+        width: 80vw;
+        height: 20vh;
+        margin: calc(4vh + 4vw) calc(2vh + 2vw);
+
+    }
+}

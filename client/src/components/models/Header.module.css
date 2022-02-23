@@ -1,0 +1,64 @@
+.header {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    padding: 0 10vw;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 7vw;
+}
+
+.menu {
+    display: none;
+}
+
+.linkWrapper {
+    display: flex;
+    align-items: baseline;
+}
+
+.link {
+    color: #8163ff;
+    text-decoration: none;
+    font-size: calc(.85vh + .85vw);
+    margin: 0 0 0 3vw;
+    cursor: pointer;
+}
+
+.Button {
+    border-color: #8163ff;
+    color: #8163ff;
+}
+
+.Button:hover {
+    background-color: #8163ff;
+    color: #fff;
+}
+
+.image {
+    height: 50px;
+}
+
+@media screen and (max-width: 500px) {
+    .nav {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        margin-left: auto;
+    }
+}
+
+
+@media screen and (min-width: 481px ) and (max-width: 768px) {
+
+}
+

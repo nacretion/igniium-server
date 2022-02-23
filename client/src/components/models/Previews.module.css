@@ -1,0 +1,10 @@
+.uploadText {
+    font-size: calc(.5vh + .5vw);
+}
+
+
+@media screen and (max-width: 500px) {
+    .uploadText {
+        font-size: calc(2vh + 2vw);
+    }
+}

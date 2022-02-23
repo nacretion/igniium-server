@@ -1,0 +1,179 @@
+.card {
+    display: flex;
+    height: 150px;
+
+    background-color: white;
+}
+
+.card:hover {
+    box-shadow: 0 0 40px #d9d9d9;
+}
+
+.titleInfo {
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #6f42c1;
+}
+
+.hr {
+    color: #6f42c1;
+    width: 100%;
+    margin: 0
+}
+
+
+.genres {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.chip {
+    background-color: #8163ff;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: .7em;
+    margin: 7px;
+    padding: 5px;
+    border-radius: calc(1.5ch + 1.5vw);
+    cursor: pointer;
+}
+
+
+.summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-size: 1em;
+}
+
+.summaryItem {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.summaryItem p {
+    margin: 0;
+}
+
+.rating:before {
+    content: "3.4";
+}
+
+.summaryRating {
+    display: flex;
+}
+
+.summaryRating span {
+    height: 100%;
+}
+
+.image {
+    height: 100%;
+    object-fit: cover;
+}
+
+.text {
+    cursor: pointer;
+    color: #6f42c1;
+    font-size: 1.2em;
+    margin: 0;
+
+}
+
+@media screen and (max-width: 1680px) {
+}
+
+@media screen and (max-width: 1140px) {
+    .hr {
+        margin: 10px 0;
+    }
+
+    .text {
+        font-size: 2em;
+    }
+
+    .card {
+        height: 300px;
+    }
+
+    .chip {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .summary {
+        margin-top: auto;
+        width: 100%;
+        font-size: 1.5em;
+    }
+
+    .summaryRating {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hr {
+        margin: 0;
+    }
+
+    .card {
+        height: 200px;
+        width: 350px;
+        margin: 20px 0;
+    }
+
+    .image {
+        height: 200px;
+    }
+
+    .chip {
+        font-size: .65em;
+    }
+
+    .genres {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .summary {
+        font-size: .25em;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: end;
+        justify-content: right;
+    }
+
+    .summaryItem {
+        display: none;
+    }
+
+    .summaryRating {
+        font-size: 4em;
+        display: flex;
+
+    }
+
+    .text {
+        font-size: 1em;
+    }
+}
+
+
+@media screen and (min-width: 481px ) and (max-width: 768px) {
+    .card {
+        height: 200px;
+        width: 500px;
+    }
+}

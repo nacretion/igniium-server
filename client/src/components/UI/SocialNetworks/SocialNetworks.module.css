@@ -1,0 +1,11 @@
+.socNetworksWrapper {
+    display: flex;
+
+    height: 40px;
+}
+
+@media screen and (max-width: 480px) {
+    .socNetworksWrapper {
+        height: 20px;
+    }
+}
