@@ -12,7 +12,7 @@ const Feed = () => {
 
     return (
         <>
-            <Header withoutLogIn={false}/>
+            <Header/>
             <div className={classes.contentWrapper}>
 
 

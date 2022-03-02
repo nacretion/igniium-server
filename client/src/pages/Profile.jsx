@@ -1,10 +1,17 @@
 import React from 'react';
+import Header from "../components/Header";
+import classes from "../styles/Profile.module.css";
+import Footer from "../components/Footer";
 
 const Profile = () => {
     return (
-        <div>
-            <h1>Success</h1>
-        </div>
+        <>
+            <Header/>
+            <div className={classes.contentWrapper}>
+
+            </div>
+            <Footer/>
+        </>
     );
 };
 

@@ -3,7 +3,6 @@ import Modal from "./UI/Modal/Modal";
 import {Button, Input, TextField} from "@mui/material";
 import {VisibleContext} from "../context";
 import classes from "./models/SignIn.module.css";
-import GoogleLogin from "react-google-login";
 import {useHttp} from "../hooks/http.hook";
 import {Expressions} from "../utils/expressions";
 
@@ -15,11 +14,7 @@ const SignIn = () => {
         modalSignIn,
         setModalSignIn,
         setModalSignUp,
-        token,
-        userId,
         login,
-        logout,
-        isAuthenticated
     } = useContext(VisibleContext)
 
     const [formSignIn, setFormSignIn] = useState({
@@ -102,12 +97,6 @@ const SignIn = () => {
                 />
                 {loading === false && message !== "" ? <p className={classes.heading}>{message}</p> : ""}
             </div>
-            <GoogleLogin
-                style={{margin: "1vh 1vw"}}
-                clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
-                buttonText="Login"
-                cookiePolicy={'single_host_origin'}
-            />
             <Button
                 onClick={loginHandler}
                 className={classes.btn}

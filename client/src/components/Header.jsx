@@ -7,9 +7,21 @@ import {VisibleContext} from "../context";
 import {useNavigate} from "react-router-dom";
 import MyMenu from "./UI/Menu/MyMenu";
 
-const Header = ({withoutLogIn}) => {
+const Header = () => {
     const navigate = useNavigate()
-    const {setModalSignIn, setModalSignUp, isAuthenticated, logout} = useContext(VisibleContext)
+    const {setModalSignIn, isAuthenticated, logout} = useContext(VisibleContext)
+
+    const options = isAuthenticated
+        ? [
+            'Feed',
+            'Create...',
+            'Profile',
+            'Logout'
+        ]
+        : [
+            'Sign in',
+            'Feed',
+        ]
 
     return (
         <header className={classes.header}>
@@ -17,7 +29,7 @@ const Header = ({withoutLogIn}) => {
                 <Image className={classes.image} src={comics}/>
             </a>
             <div className={classes.menu}>
-                <MyMenu/>
+                <MyMenu options={options}/>
             </div>
 
             <nav className={classes.nav}>

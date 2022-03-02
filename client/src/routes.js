@@ -23,6 +23,7 @@ export const useRoutes = isAuthenticated => {
     } else {
         return (
             <Routes>
+                <Route exact path="/profile" element={<Feed/>}/>
                 {routes}
             </Routes>
         )

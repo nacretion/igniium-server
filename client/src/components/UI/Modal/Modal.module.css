@@ -19,12 +19,18 @@
 
 }
 
+.close {
+    margin-top: 20px !important;
+    min-height: 20px;
+    min-width: 20px;
+}
+
 .modalContent, .inputWrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 3vw;
+    padding: 0 3vw 3vw 3vw;
     background: white;
     border-radius: 1vh;
 }

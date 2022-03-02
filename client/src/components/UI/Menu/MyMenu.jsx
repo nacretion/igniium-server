@@ -7,19 +7,15 @@ import MenuIcon from '@mui/icons-material/Menu';
 import {useNavigate} from "react-router-dom";
 import {VisibleContext} from "../../../context";
 
-const options = [
-    'Sign in',
-    'Feed',
-    'Create...'
-];
+
 
 const ITEM_HEIGHT = 48;
 
 
-const MyMenu = () => {
+const MyMenu = ({options}) => {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const navigate = useNavigate()
-    const {setModalSignIn, setModalSignUp} = useContext(VisibleContext)
+    const {setModalSignIn, logout} = useContext(VisibleContext)
 
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
@@ -39,6 +35,12 @@ const MyMenu = () => {
                 break;
             case "Create...":
                 navigate("/create")
+                break;
+            case "Profile":
+                navigate("/profile")
+                break;
+            case "Logout":
+                logout()
                 break;
         }
         handleClose()
