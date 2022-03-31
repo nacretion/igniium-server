@@ -69,7 +69,7 @@ router.post(
             })
 
             const {username, password} = request.body
-            const user = await User.findOne({username: username})
+            const user = await User.findOne({username: username.toLowerCase()})
 
             if (!user) {
                 return response.status(400).json({message: "That user not exists "})
